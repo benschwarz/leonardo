@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Raphael Pie Graph Example</title>
+  </head>
+  <body>
+    <div id="graph"></div>
+  </body>
+  <script src="../vendor/jquery-1.2.6.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../vendor/raphael-0.5.4b.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/js/leonardo-graph-pie.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function () {
+      var data = [
+        {
+          color: 'FFCC00',
+          value: '30',
+          label: 'Dirt'
+        },
+        {
+          color: 'FF0000',
+          value: '70',
+          label: 'Water'
+        }
+      ];
+      new Leonardo.Pie('graph', 200, 200, data, {backgroundColor: 'ccc'})
+    })
+  </script>
+</html>
