@@ -1,7 +1,13 @@
-## News
+# Leonardo
 
-- First implementation of sparkline graph
+Started on a cold winter night in October 08'. Its a simple sparkline graph, but you should be able to drop it straight in. 
+Next time I need to drop some sparklines / graphs into a project I'm sure it'll get some attention. Until then...eehhh. Send patches!
 
-![Sparkline graph screen shot](https://github.com/benschwarz/leonardo/tree/master/example/images/sparkline-0.1.png?raw=true)
+## Simple implmentation of a sparkline graph
 
-## Currently in development
+![Sparkline graph screen shot](http://img.skitch.com/20090522-bke34py9n2jwtwpfxm2bhjp6en.jpg)
+
+## Thanks
+
+Dylan Egan, for tooling about and making the sparklines look a better
+Edward Tufte, for designing sparklines
