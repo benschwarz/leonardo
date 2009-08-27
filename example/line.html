@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Raphael line Graph Example</title>
+    <style type="text/css" media="screen">
+      body { background-color: #ccc; font-family: Georgia; font-size: 0.8em; }
+      ul { list-style-type: none; }
+      li { background-color: #fff; width: 230px; margin-top: 1em; }
+      
+      /* Background colours can be set using the parent element */
+      #spark_2 { background-color: #ccffcc;}
+    </style>
+  </head>
+  <body>
+    <div id="line-graph"></div>
+  </body>
+  <script src="../vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../vendor/raphael.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/js/leonardo.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/js/leonardo.line.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function () {
+      var data_1 = [300, 100, 410, 331, 12, 69, 44, 32, 109, 99, 129, 83, 136, 112, 91, 81, 139, 36, 5, 152, 89, 29, 99, 46, 269, 207, 268, 75, 297, 177, 228, 209, 177, 139, 178, 55, 365, 286, 257, 364, 375, 703];
+      var data_2 = [0, 2, 6, 10, 12, 3, 0, 5, 14, 5, 10, 16, 9, 5, 22, 5, 5, 37, 30, 41, 40, 31, 10]
+      new Leonardo.Line('line-graph', 500, 350, data_1);
+    })
+  </script>
+</html>
